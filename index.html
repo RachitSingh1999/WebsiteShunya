@@ -11,6 +11,7 @@
     <div class="identity">
       <h1>Rachit Singh</h1>
       <p class="subtitle">M.Sc. Computer Science &middot; TU Dresden</p>
+      <p class="tagline">Backend engineer picking up AI, ML, and data &mdash; looking for a Werkstudent role to build that into something real.</p>
     </div>
     <nav class="top-links">
       <a href="resume.pdf" target="_blank">résumé</a>
@@ -19,6 +20,7 @@
       <a href="https://linkedin.com/in/rachit-singh-668a21191" target="_blank">linkedin</a>
     </nav>
   </header>
+
   <nav id="mini-nav">
     <a href="#builds" data-section="builds">builds</a>
     <a href="#path" data-section="path">path</a>
@@ -27,70 +29,80 @@
     <a href="#roots" data-section="roots">roots</a>
     <a href="#orbit" data-section="orbit">orbit</a>
   </nav>
-    <main id="hero">
-       <div id="hub">
-      <svg id="zero-svg" viewBox="0 0 700 700" width="700" height="700">
-        <polygon id="hex-guide" points="350,150 523,250 523,450 350,550 177,450 177,250"
-          fill="none" stroke="#3a4046" stroke-width="1" stroke-dasharray="4,5" opacity="0" />
 
-        <line class="spoke" id="spoke-0" x1="350" y1="260" x2="350" y2="180" opacity="0" />
-        <line class="spoke" id="spoke-1" x1="428" y1="305" x2="497" y2="265" opacity="0" />
-        <line class="spoke" id="spoke-2" x1="428" y1="395" x2="497" y2="435" opacity="0" />
-        <line class="spoke" id="spoke-3" x1="350" y1="440" x2="350" y2="520" opacity="0" />
-        <line class="spoke" id="spoke-4" x1="272" y1="395" x2="203" y2="435" opacity="0" />
-        <line class="spoke" id="spoke-5" x1="272" y1="305" x2="203" y2="265" opacity="0" />
+  <main id="hero">
+    <div id="hub-wrapper">
+      <div id="hub">
+        <svg id="zero-svg" viewBox="0 0 700 700" width="700" height="700">
+          <polygon id="hex-guide" points="350,150 523,250 523,450 350,550 177,450 177,250"
+            fill="none" stroke="#3a4046" stroke-width="1" stroke-dasharray="4,5" opacity="0" />
 
-        <circle id="ring" cx="350" cy="350" r="0" fill="none" stroke="#e8c07d" stroke-width="2" opacity="0" />
-        <circle id="bindu" cx="350" cy="350" r="6" fill="#e8c07d" />
-      </svg>
+          <line class="spoke" id="spoke-0" x1="350" y1="260" x2="350" y2="180" opacity="0" />
+          <line class="spoke" id="spoke-1" x1="428" y1="305" x2="497" y2="265" opacity="0" />
+          <line class="spoke" id="spoke-2" x1="428" y1="395" x2="497" y2="435" opacity="0" />
+          <line class="spoke" id="spoke-3" x1="350" y1="440" x2="350" y2="520" opacity="0" />
+          <line class="spoke" id="spoke-4" x1="272" y1="395" x2="203" y2="435" opacity="0" />
+          <line class="spoke" id="spoke-5" x1="272" y1="305" x2="203" y2="265" opacity="0" />
+
+          <circle id="ring" cx="350" cy="350" r="0" fill="none" stroke="#e8c07d" stroke-width="2" opacity="0" />
+          <circle id="bindu" cx="350" cy="350" r="6" fill="#e8c07d" />
+        </svg>
 
         <a class="label" id="label-0" href="#builds" style="left:350px; top:150px;">
-        <span class="caption">PROJECTS</span><span class="word">builds</span>
-      </a>
-      <a class="label label-right" id="label-1" href="#path" style="left:523px; top:250px;">
-        <span class="caption">EXPERIENCE</span><span class="word">path</span>
-      </a>
-      <a class="label label-right" id="label-2" href="#tools" style="left:523px; top:450px;">
-        <span class="caption">STACK</span><span class="word">tools</span>
-      </a>
-      <a class="label" id="label-3" href="#origin" style="left:350px; top:550px;">
-        <span class="caption">STORY</span><span class="word">origin</span>
-      </a>
-      <a class="label label-left" id="label-4" href="#roots" style="left:177px; top:450px;">
-        <span class="caption">CULTURE</span><span class="word">roots</span>
-      </a>
-      <a class="label label-left" id="label-5" href="#orbit" style="left:177px; top:250px;">
-        <span class="caption">INTERESTS</span><span class="word">orbit</span>
-      </a>
+          <span class="caption">PROJECTS</span><span class="word">builds</span>
+        </a>
+        <a class="label label-right" id="label-1" href="#path" style="left:523px; top:250px;">
+          <span class="caption">EXPERIENCE</span><span class="word">path</span>
+        </a>
+        <a class="label label-right" id="label-2" href="#tools" style="left:523px; top:450px;">
+          <span class="caption">STACK</span><span class="word">tools</span>
+        </a>
+        <a class="label" id="label-3" href="#origin" style="left:350px; top:550px;">
+          <span class="caption">STORY</span><span class="word">origin</span>
+        </a>
+        <a class="label label-left" id="label-4" href="#roots" style="left:177px; top:450px;">
+          <span class="caption">CULTURE</span><span class="word">roots</span>
+        </a>
+        <a class="label label-left" id="label-5" href="#orbit" style="left:177px; top:250px;">
+          <span class="caption">INTERESTS</span><span class="word">orbit</span>
+        </a>
+      </div>
+    </div>
+
     <p id="caption-text">zero</p>
   </main>
-   <section id="builds" class="content-section">
+
+  <section id="builds" class="content-section">
     <h2>builds</h2>
     <div class="project">
       <h3>Terminal One</h3>
-      <p>A Django-based terminal-style portfolio with an AI-powered CV matcher — uses the Claude API to score resume/job-description fit.</p>
+      <p>A portfolio that works like a terminal — you type commands instead of clicking through pages. One command runs an AI matcher, built on the Claude API, that scores how well my background fits a job description you paste in.</p>
       <a href="https://github.com/RachitSingh1999/MyPortfolio" target="_blank">view repo →</a>
     </div>
     <div class="project">
       <h3>CSV Data Analyser</h3>
-      <p>A Python tool built with Pandas, FastAPI, and SQLite for analyzing CSV datasets.</p>
+      <p>A tool for exploring and cleaning CSV datasets, built with Pandas, FastAPI, and SQLite.</p>
       <a href="#" target="_blank">view repo →</a>
     </div>
   </section>
 
-    <section id="path" class="content-section">
+  <section id="path" class="content-section">
     <h2>path</h2>
     <div class="project">
       <h3>Software Engineer, Bechtel Corporation</h3>
-      <p>3+ years building enterprise systems — Java, Spring Boot, REST/SOAP APIs, PL/SQL, Oracle, and Azure-based deployments.</p>
+      <p>Three years, three promotions — from Junior Software Engineer to Software Engineer — building Java and PL/SQL systems for enterprise procurement workflows used across 100,000+ projects. The standout moment: diagnosing and fixing a production-critical regression affecting 1.7M+ records before it reached 30,000 users. By the end, I was the sole developer responsible for all integration automation across the platform.</p>
+    </div>
+    <div class="project">
+      <h3>Full Stack Developer Intern, Clapself Inc</h3>
+      <p>An early internship building full-stack features with Java, Spring Boot, MySQL, and React — including an indexing change that meaningfully cut query response times.</p>
     </div>
     <div class="project">
       <h3>M.Sc. Computer Science, TU Dresden</h3>
-      <p>Enrolled since transitioning out of full-time industry work — expected through October 2027.</p>
+      <p>Studying AI, machine learning, and data analytics — the direction that pulled me out of a stable job and back into a classroom.</p>
     </div>
   </section>
 
-   <section id="tools" class="content-section">
+  <section id="tools" class="content-section">
     <h2>tools</h2>
     <div class="skill-group">
       <h3>Languages</h3>
@@ -133,32 +145,35 @@
       </div>
     </div>
     <div class="skill-group">
+      <h3>Practices</h3>
+      <div class="tag-list">
+        <span class="tag">REST APIs</span>
+        <span class="tag">OOP</span>
+        <span class="tag">Agile/Scrum</span>
+      </div>
+    </div>
+    <p class="spoken">English (C1) &middot; German (A2)</p>
+  </section>
+
   <section id="origin" class="content-section">
-     <section id="origin" class="content-section">
     <h2>origin</h2>
     <p class="story">
-      I spent three years at Bechtel Corporation, working up from Junior Software Engineer
-      to Software Engineer — shipping production systems at enterprise scale, fixing what
-      broke, building what didn't exist yet. It was steady, and it was going somewhere. But
-      the parts of engineering I found myself most drawn to — AI, machine learning, the
-      systems underneath the systems — weren't the parts my day job asked of me. So I left,
-      and started again at TU Dresden. Not because anything failed, but because zero felt
-      like the right place to rebuild from.
+      I spent three years at Bechtel, working up from Junior Software Engineer to Software Engineer — shipping production systems at enterprise scale, fixing what broke, building what didn't exist yet. It was steady work, and it was going somewhere. But the parts of engineering that actually pulled at me — AI, machine learning, the systems underneath the systems — weren't the parts my day job asked for. So I left, and started again at TU Dresden. Not because anything failed. Because zero felt like the right place to rebuild from.
     </p>
   </section>
 
-    <section id="roots" class="content-section roots-section">
+  <section id="roots" class="content-section roots-section">
     <h2>roots</h2>
     <p class="story">
-      Alongside this, I've been exploring Bharat's ancient cultural heritage — its epics,
-      its history, its classical art — as a separate creative project: a companion site
-      telling stories from the Ramayana, the Mahabharata, and the rulers who shaped the
-      subcontinent, built entirely from public-domain art and history.
+      India's ancient history keeps surprising me the more I dig into it — Takshashila was teaching students around 600 BCE, roughly seventeen centuries before Oxford existed, and Nalanda ran as a full residential university for nearly 750 years, drawing scholars from as far as China, Korea, and Tibet. I think the same instinct that pulls me toward old systems — wanting to know how something worked, what made it endure, why it eventually didn't — is the same one that makes debugging code nobody's touched in years genuinely interesting to me. The Ramayana and Mahabharata pull at me for a similar reason: some of the oldest continuously retold stories in human history, still being rewritten into something new every generation. Living in Germany has only sharpened that curiosity outward — Dresden has its own centuries buried under it too, and I'm slowly learning to look for them.
     </p>
   </section>
 
-   <section id="orbit" class="content-section orbit-section">
+  <section id="orbit" class="content-section orbit-section">
     <h2>orbit</h2>
+    <p class="story">
+      Most weekends I'm either at the gym or figuring out the next trip — chasing new cities and trails whenever the semester gives me room. I played tennis competitively growing up, before work took over most of the free time; these days it's mostly football watched from the couch, Bundesliga on repeat since moving to Dresden.
+    </p>
     <div class="tag-list">
       <span class="tag">Travelling</span>
       <span class="tag">Gym</span>
@@ -166,6 +181,14 @@
       <span class="tag">Tennis</span>
     </div>
   </section>
+
+  <div id="job-sign">
+    <div class="sign-inner">
+      <span class="sign-label">DAYS SINCE LAST JOB</span>
+      <span class="sign-number" id="days-counter">0</span>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
