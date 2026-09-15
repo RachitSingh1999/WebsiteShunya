@@ -55,3 +55,33 @@ bindu.classList.add('pulse');
 setTimeout(playEntrance, 1800);
 
 hero.addEventListener('click', replayEntrance);
+
+const miniNav = document.getElementById('mini-nav');
+const heroEl = document.getElementById('hero');
+const navLinks = document.querySelectorAll('#mini-nav a');
+const sections = document.querySelectorAll('.content-section');
+
+const heroObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      miniNav.classList.remove('visible');
+    } else {
+      miniNav.classList.add('visible');
+    }
+  });
+}, { threshold: 0 });
+
+heroObserver.observe(heroEl);
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.section === id);
+      });
+    }
+  });
+}, { threshold: 0.5 });
+
+sections.forEach(section => sectionObserver.observe(section));
