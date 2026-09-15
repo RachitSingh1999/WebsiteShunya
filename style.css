@@ -144,3 +144,90 @@ html {
   color: var(--text);
   max-width: 600px;
 }
+.project {
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.project h3 {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.project p {
+  margin-bottom: 8px;
+}
+
+.project a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+.skill-group {
+  margin-bottom: 24px;
+}
+
+.skill-group h3 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 5px 12px;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  color: var(--gold);
+}
+
+.spoken {
+  margin-top: 24px;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+.story {
+  max-width: 560px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+}
+.orbit-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.orbit-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(232,192,125,0.08) 0%, transparent 60%);
+  animation: drift 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(5%, 5%); }
+}
+
