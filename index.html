@@ -20,14 +20,72 @@
     </nav>
   </header>
 
-  <main id="hero">
-    <svg id="zero-svg" viewBox="0 0 220 220" width="220" height="220">
-      <circle id="ring" cx="110" cy="110" r="0" fill="none" stroke="#e8c07d" stroke-width="2" opacity="0" />
-      <circle id="bindu" cx="110" cy="110" r="6" fill="#e8c07d" />
-    </svg>
-    <p id="caption">zero</p>
-  </main>
+    <main id="hero">
+       <div id="hub">
+      <svg id="zero-svg" viewBox="0 0 700 700" width="700" height="700">
+        <polygon id="hex-guide" points="350,150 523,250 523,450 350,550 177,450 177,250"
+          fill="none" stroke="#3a4046" stroke-width="1" stroke-dasharray="4,5" opacity="0" />
 
+        <line class="spoke" id="spoke-0" x1="350" y1="260" x2="350" y2="180" opacity="0" />
+        <line class="spoke" id="spoke-1" x1="428" y1="305" x2="497" y2="265" opacity="0" />
+        <line class="spoke" id="spoke-2" x1="428" y1="395" x2="497" y2="435" opacity="0" />
+        <line class="spoke" id="spoke-3" x1="350" y1="440" x2="350" y2="520" opacity="0" />
+        <line class="spoke" id="spoke-4" x1="272" y1="395" x2="203" y2="435" opacity="0" />
+        <line class="spoke" id="spoke-5" x1="272" y1="305" x2="203" y2="265" opacity="0" />
+
+        <circle id="ring" cx="350" cy="350" r="0" fill="none" stroke="#e8c07d" stroke-width="2" opacity="0" />
+        <circle id="bindu" cx="350" cy="350" r="6" fill="#e8c07d" />
+      </svg>
+
+        <a class="label" id="label-0" href="#builds" style="left:350px; top:150px;">
+        <span class="caption">PROJECTS</span><span class="word">builds</span>
+      </a>
+      <a class="label label-right" id="label-1" href="#path" style="left:523px; top:250px;">
+        <span class="caption">EXPERIENCE</span><span class="word">path</span>
+      </a>
+      <a class="label label-right" id="label-2" href="#tools" style="left:523px; top:450px;">
+        <span class="caption">STACK</span><span class="word">tools</span>
+      </a>
+      <a class="label" id="label-3" href="#origin" style="left:350px; top:550px;">
+        <span class="caption">STORY</span><span class="word">origin</span>
+      </a>
+      <a class="label label-left" id="label-4" href="#roots" style="left:177px; top:450px;">
+        <span class="caption">CULTURE</span><span class="word">roots</span>
+      </a>
+      <a class="label label-left" id="label-5" href="#orbit" style="left:177px; top:250px;">
+        <span class="caption">INTERESTS</span><span class="word">orbit</span>
+      </a>
+    <p id="caption-text">zero</p>
+  </main>
+  <section id="builds" class="content-section">
+    <h2>builds</h2>
+    <p>Projects content goes here.</p>
+  </section>
+
+  <section id="path" class="content-section">
+    <h2>path</h2>
+    <p>Experience content goes here.</p>
+  </section>
+
+  <section id="tools" class="content-section">
+    <h2>tools</h2>
+    <p>Stack content goes here.</p>
+  </section>
+
+  <section id="origin" class="content-section">
+    <h2>origin</h2>
+    <p>Story content goes here.</p>
+  </section>
+
+  <section id="roots" class="content-section">
+    <h2>roots</h2>
+    <p>Culture content goes here.</p>
+  </section>
+
+  <section id="orbit" class="content-section">
+    <h2>orbit</h2>
+    <p>Interests content goes here.</p>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
